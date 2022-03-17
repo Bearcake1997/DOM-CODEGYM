@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="number" id="innumber">
+        <h1>Nhập số</h1>
+        <input id="myNumber" type="text"></input>
+        <button type="button" onclick="getValue()">Kiểm tra</button>
+    </div>
+    <script>
+        function getValue() {
+            let myInput= document.getElementById("myNumber");
+            let myNumber = myInput.value 
+            if (myNumber%2 == 0) {
+                alert(myNumber + " " + "là một số chẵn!");
+            } else {
+                alert(myNumber + " " + "là một số lẽ!");
+            }
+        }
+    </script>
+</body>
+</html>
