@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="number" id="innumber">
+        <h1>Calculator</h1>
+        <form action="maytinh.php">
+            <input id="myNumber_1" type="text"></input>
+            <input id="myNumber_2" type="text"></input>
+        </form>
+        <br />
+        <button type="button" onclick="Addition()">Addition(+)</button>
+        <button type="button" onclick="Subtraction()">Subtraction(-)</button>
+        <button type="button" onclick="Multiplication()">Multiplication(X)</button>
+        <button type="button" onclick="Division()">Division(/)</button>
+    </div>
+    <script>
+        function Addition() {
+            var myNumber = document.getElementById('myNumber_1').value;
+            var myNumbers = document.getElementById('myNumber_2').value;
+            var sumMyNumber = Number(myNumber) + Number(myNumbers);
+            alert(" Kết quả là " + sumMyNumber);
+        }
+        function Subtraction () {
+            var myNumber = document.getElementById('myNumber_1').value;
+            var myNumbers = document.getElementById('myNumber_2').value;
+            var subMyNumber = Number(myNumber) - Number(myNumbers);
+            alert(" Kết quả là " + subMyNumber);
+        }
+        function Multiplication () {
+            var myNumber = document.getElementById('myNumber_1').value;
+            var myNumbers = document.getElementById('myNumber_2').value;
+            var mulMyNumber = Number(myNumber) * Number(myNumbers);
+            alert(" Kết quả là " + mulMyNumber)
+        }
+        function Division () {
+            var myNumber = document.getElementById('myNumber_1').value;
+            var myNumbers = document.getElementById('myNumber_2').value;
+            var diMyNumber = Number(myNumber) / Number(myNumbers);
+            alert(" Kết quả là " + diMyNumber);
+        }
+    </script>
+</body>
+</html>
