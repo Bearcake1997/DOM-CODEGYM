@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="number" id="innumber">
         <h1>Nhập số</h1>
         <input id="myNumber" type="text"></input>
         <button type="button" onclick="getValue()">Kiểm tra</button>
-    </div>
     <script>
         function getValue() {
             let myInput= document.getElementById("myNumber");
-            let myNumber = myInput.value 
+            let myNumber = myInput.value
             if (myNumber%2 == 0) {
                 alert(myNumber + " " + "là một số chẵn!");
             } else {
