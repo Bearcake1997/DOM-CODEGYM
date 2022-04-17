@@ -7,18 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="number" id="innumber">
         <h1>Calculator</h1>
         <form action="maytinh.php">
-            <input id="myNumber_1" type="text"></input>
-            <input id="myNumber_2" type="text"></input>
+            <input id="myNumber_1" type="number"></input>
+            <input id="myNumber_2" type="number"></input>
         </form>
         <br />
         <button type="button" onclick="Addition()">Addition(+)</button>
         <button type="button" onclick="Subtraction()">Subtraction(-)</button>
         <button type="button" onclick="Multiplication()">Multiplication(X)</button>
         <button type="button" onclick="Division()">Division(/)</button>
-    </div>
     <script>
         function Addition() {
             var myNumber = document.getElementById('myNumber_1').value;
@@ -46,4 +44,4 @@
         }
     </script>
 </body>
-</html>
+</html>     
